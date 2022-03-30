@@ -1,4 +1,8 @@
-TOKEN = '5202401074:AAEiGuzymrvDKuySkRj4Jqex3dw1RSwvKAo'
+TOKEN = None
+
+with open("token.txt") as f:
+    TOKEN = f.read().strip()
+    
 keys = {
     'биткоин': 'BTC',
     'эфириум': 'ETH',
